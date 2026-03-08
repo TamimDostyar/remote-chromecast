@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.chromecast.remote</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-l</string>
+        <string>-c</string>
+        <string>exec /opt/anaconda3/bin/python3 /Users/tamimdostyar/Documents/remote/web_remote.py</string>
+    </array>
+
+    <!-- Start immediately when loaded and on every login -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- Restart automatically if it crashes -->
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/tamimdostyar/Documents/remote</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/tamimdostyar/Documents/remote/web_remote.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/tamimdostyar/Documents/remote/web_remote_err.log</string>
+</dict>
+</plist>

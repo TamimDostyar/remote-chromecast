@@ -1,0 +1,330 @@
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: Operation not permitted
+job-working-directory: error retrieving current directory: getcwd: cannot access parent directories: Operation not permitted
+job-working-directory: error retrieving current directory: getcwd: cannot access parent directories: Operation not permitted
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: Operation not permitted
+job-working-directory: error retrieving current directory: getcwd: cannot access parent directories: Operation not permitted
+Traceback (most recent call last):
+  File "/Users/tamimdostyar/Documents/remote/web_remote.py", line 14, in <module>
+    from flask import Flask, jsonify, request
+ModuleNotFoundError: No module named 'flask'
+Traceback (most recent call last):
+  File "/Users/tamimdostyar/Documents/remote/web_remote.py", line 14, in <module>
+    from flask import Flask, jsonify, request
+ModuleNotFoundError: No module named 'flask'
+Traceback (most recent call last):
+  File "/Users/tamimdostyar/Documents/remote/web_remote.py", line 14, in <module>
+    from flask import Flask, jsonify, request
+ModuleNotFoundError: No module named 'flask'
+Traceback (most recent call last):
+  File "/Users/tamimdostyar/Documents/remote/web_remote.py", line 14, in <module>
+    from flask import Flask, jsonify, request
+ModuleNotFoundError: No module named 'flask'
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.28.21.1:8080
+Press CTRL+C to quit
+127.0.0.1 - - [07/Mar/2026 19:06:01] "GET /api/status HTTP/1.1" 200 -
+[2026-03-07 19:07:40,485] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/flask/app.py", line 883, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/flask/app.py", line 902, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/flask/app.py", line 1186, in make_response
+    rv = self.response_class(
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/werkzeug/wrappers/response.py", line 175, in __init__
+    self.set_data(response)
+  File "/opt/anaconda3/lib/python3.12/site-packages/werkzeug/wrappers/response.py", line 297, in set_data
+    value = value.encode()
+            ^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode characters in position 12972-12973: surrogates not allowed
+10.28.20.108 - - [07/Mar/2026 19:07:40] "GET / HTTP/1.1" 500 -
+10.28.20.108 - - [07/Mar/2026 19:07:40] "GET /favicon.ico HTTP/1.1" 404 -
+[2026-03-07 19:07:56,443] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/flask/app.py", line 883, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/flask/app.py", line 902, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/flask/app.py", line 1186, in make_response
+    rv = self.response_class(
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/werkzeug/wrappers/response.py", line 175, in __init__
+    self.set_data(response)
+  File "/opt/anaconda3/lib/python3.12/site-packages/werkzeug/wrappers/response.py", line 297, in set_data
+    value = value.encode()
+            ^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode characters in position 12972-12973: surrogates not allowed
+10.28.21.1 - - [07/Mar/2026 19:07:56] "GET / HTTP/1.1" 500 -
+10.28.21.1 - - [07/Mar/2026 19:07:56] "GET /favicon.ico HTTP/1.1" 404 -
+[2026-03-07 19:08:18,970] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/flask/app.py", line 883, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/flask/app.py", line 902, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/flask/app.py", line 1186, in make_response
+    rv = self.response_class(
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/werkzeug/wrappers/response.py", line 175, in __init__
+    self.set_data(response)
+  File "/opt/anaconda3/lib/python3.12/site-packages/werkzeug/wrappers/response.py", line 297, in set_data
+    value = value.encode()
+            ^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode characters in position 12972-12973: surrogates not allowed
+10.28.21.1 - - [07/Mar/2026 19:08:18] "GET / HTTP/1.1" 500 -
+[2026-03-07 19:09:04,719] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/flask/app.py", line 883, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/flask/app.py", line 902, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/flask/app.py", line 1186, in make_response
+    rv = self.response_class(
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/werkzeug/wrappers/response.py", line 175, in __init__
+    self.set_data(response)
+  File "/opt/anaconda3/lib/python3.12/site-packages/werkzeug/wrappers/response.py", line 297, in set_data
+    value = value.encode()
+            ^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode characters in position 12972-12973: surrogates not allowed
+10.28.21.1 - - [07/Mar/2026 19:09:04] "GET / HTTP/1.1" 500 -
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.28.21.1:8080
+Press CTRL+C to quit
+127.0.0.1 - - [07/Mar/2026 19:09:12] "GET / HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:09:37] "GET / HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:09:37] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:09:40] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:09:41] "GET / HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:09:42] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:09:43] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:09:45] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:09:46] "POST /api/pair HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:09:46] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:09:48] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:09:49] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:09:51] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:09:52] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:09:54] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:09:55] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:09:57] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:09:58] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:00] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:01] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:03] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:04] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:06] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:07] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:09] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:10] "POST /api/pair/pin HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:10] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:12] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:13] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:15] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:16] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:18] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:19] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:22] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:22] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:23] "POST /api/pair/pin HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:24] "POST /api/pair/pin HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:25] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:25] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:28] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:28] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:31] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:31] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:34] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:34] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:37] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:37] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:40] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:40] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:43] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:43] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:46] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:46] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:49] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:49] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:52] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:52] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:55] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:55] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:10:58] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:10:58] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:01] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:01] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:04] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:04] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:07] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:07] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:10] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:10] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:13] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:14] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:16] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:17] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:19] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:20] "GET /api/status HTTP/1.1" 200 -
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.28.21.1:8080
+Press CTRL+C to quit
+127.0.0.1 - - [07/Mar/2026 19:11:22] "GET / HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:22] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:23] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:25] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:25] "GET / HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:26] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:28] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:29] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:29] "POST /api/pair HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:31] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:32] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:34] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:35] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:37] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:38] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:40] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:41] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:42] "POST /api/pair/pin HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:43] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:44] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:46] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:47] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:49] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:51] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:51] "POST /api/pair/pin HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:52] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:53] "POST /api/nav/connect HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:54] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:55] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:57] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:11:58] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:59] "POST /api/nav/key HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:59] "POST /api/nav/key HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:59] "POST /api/nav/key HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:59] "POST /api/nav/key HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:11:59] "POST /api/nav/key HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:00] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:01] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:03] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:04] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:06] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:07] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:09] "GET / HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:09] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:10] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:12] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:14] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:15] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:17] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:18] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:20] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:21] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:23] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:24] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:24] "GET / HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:24] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:26] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:27] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:29] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:30] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:32] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:33] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:35] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:37] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:38] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:41] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:44] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:44] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:47] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:47] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:50] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:50] "POST /api/nav/key HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:51] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:51] "POST /api/nav/key HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:52] "POST /api/nav/key HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:53] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:54] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:56] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:12:57] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:12:59] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:00] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:02] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:03] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:05] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:06] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:08] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:09] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:11] "POST /api/nav/key HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:11] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:11] "POST /api/nav/key HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:12] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:12] "POST /api/nav/key HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:12] "POST /api/nav/key HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:12] "POST /api/nav/key HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:14] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:15] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:17] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:18] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:20] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:21] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:23] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:24] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:26] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:27] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:29] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:31] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:32] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:34] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:35] "GET /api/status HTTP/1.1" 200 -
+10.28.20.108 - - [07/Mar/2026 19:13:37] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:38] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:41] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:44] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:47] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:50] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:53] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:56] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:13:59] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:14:02] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:14:05] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:14:08] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:14:11] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:14:14] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:14:17] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:14:20] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:14:23] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:14:26] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:14:29] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:14:32] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:14:35] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:14:38] "GET /api/status HTTP/1.1" 200 -
+10.28.21.1 - - [07/Mar/2026 19:14:41] "GET /api/status HTTP/1.1" 200 -
