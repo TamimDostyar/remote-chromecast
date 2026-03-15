@@ -1,25 +1,4 @@
 #!/usr/bin/env python3
-
-
-
-"""
-
-	ping 29731b5f-9712-af76-ecbd-6fb2bf627d6f.local
-
-
-	dns-sd -L "Chromecast-HD-29731b5f9712af76ecbd6fb2bf627d6f" _googlecast._tcp local
-
-
-
-
-"""
-#!/usr/bin/env python3
-"""
-Chromecast Remote
------------------
-pip install pychromecast androidtvremote2
-"""
-
 import asyncio
 import json
 import pathlib
@@ -27,10 +6,6 @@ import threading
 import time
 import tkinter as tk
 from tkinter import ttk, messagebox
-
-# ─────────────────────────────────────────────
-#  Persistent config  (~/.chromecast_remote.json)
-# ─────────────────────────────────────────────
 
 CONFIG_PATH = pathlib.Path.home() / ".chromecast_remote.json"
 
@@ -70,8 +45,7 @@ class Media:
         self.cast      = None
         self._zc       = None
         self._browser  = None
-        self._host_map = {}   # friendly_name → host IP
-
+        self._host_map = {}   
     def scan(self):
         """Discover Chromecasts on the LAN. Returns {name: ip}."""
         self._stop_browser()
@@ -88,16 +62,11 @@ class Media:
             pychromecast.SimpleCastListener(on_add), self._zc)
         self._browser.start_discovery()
         time.sleep(5)
-        # FIX: Stop the scan browser NOW so its Zeroconf instance is free
-        # before connect() tries to create another one.
-        self._stop_browser()
+		self._stop_browser()
         return found
 
     def connect(self, name):
-        """Connect to a named Chromecast. Returns host IP."""
-        # FIX: Always use a fresh Zeroconf for the connect phase so there is
-        # no conflict with a still-running scan browser.
-        casts, browser = pychromecast.get_listed_chromecasts(
+		casts, browser = pychromecast.get_listed_chromecasts(
             friendly_names=[name],
             discovery_timeout=10,
         )
