@@ -2,7 +2,6 @@
 """
 Chromecast Remote — Web Server
 pip install pychromecast androidtvremote2 flask
-Access: http://<your-mac-ip>:8080
 """
 
 import asyncio
@@ -14,8 +13,6 @@ import time
 from flask import Flask, jsonify, request
 
 PORT = 8080
-
-# ── Config ────────────────────────────────────────────────────────────────────
 
 CONFIG_PATH = pathlib.Path.home() / ".chromecast_remote.json"
 
@@ -34,10 +31,6 @@ def save_config(data: dict):
         CONFIG_PATH.write_text(json.dumps(c, indent=2))
     except Exception as e:
         print(f"[config] {e}")
-
-
-# ── Deps ──────────────────────────────────────────────────────────────────────
-
 try:
     import pychromecast
     from zeroconf import Zeroconf
@@ -51,8 +44,6 @@ try:
 except ImportError:
     HAS_NAV = False
 
-
-# ── Media (pychromecast) ──────────────────────────────────────────────────────
 
 class Media:
     def __init__(self):
@@ -169,9 +160,6 @@ class Media:
         except Exception:
             return {}
 
-
-# ── Nav (androidtvremote2) ────────────────────────────────────────────────────
-
 class Nav:
     CERT = str(pathlib.Path.home() / ".chromecast_remote_cert.pem")
     KEY  = str(pathlib.Path.home() / ".chromecast_remote_key.pem")
@@ -249,8 +237,6 @@ class Nav:
             return self._remote is not None
 
 
-# ── Server state ──────────────────────────────────────────────────────────────
-
 _st_lock = threading.Lock()
 _st = dict(
     scan_status="idle", scan_msg="", scan_devices=[],
@@ -268,14 +254,10 @@ def _st_get():
     with _st_lock:
         return dict(_st)
 
-
-# ── Flask app ─────────────────────────────────────────────────────────────────
-
 app   = Flask(__name__)
 media = Media()
 nav   = Nav() if HAS_NAV else None
 
-# Restore saved device list so the dropdown is pre-populated on page load
 _saved = load_config()
 if _saved.get("devices"):
     _st["scan_devices"] = _saved["devices"]
@@ -457,8 +439,6 @@ def api_nav_key():
         threading.Thread(target=nav.key, args=(code,), daemon=True).start()
     return jsonify({"ok": True})
 
-
-# ── HTML (single-page UI) ─────────────────────────────────────────────────────
 
 HTML = """<!DOCTYPE html>
 <html lang="en">
@@ -841,9 +821,6 @@ poll();
 </script>
 </body>
 </html>"""
-
-
-# ── Entry ─────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     import socket
