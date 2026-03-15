@@ -2,7 +2,7 @@
   Chromecast Remote
   ──────────────────────────────
   Local:   http://localhost:8080
-  Network: http://10.28.21.1:8080  ← open this on your phone
+
 
  * Serving Flask app 'web_remote'
  * Debug mode: off
@@ -10,7 +10,7 @@
   Chromecast Remote
   ──────────────────────────────
   Local:   http://localhost:8080
-  Network: http://10.28.21.1:8080  ← open this on your phone
+
 
  * Serving Flask app 'web_remote'
  * Debug mode: off
@@ -18,7 +18,6 @@
   Chromecast Remote
   ──────────────────────────────
   Local:   http://localhost:8080
-  Network: http://10.28.21.1:8080  ← open this on your phone
 
  * Serving Flask app 'web_remote'
  * Debug mode: off
