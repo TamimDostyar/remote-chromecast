@@ -10,6 +10,7 @@
         <string>/bin/bash</string>
         <string>-l</string>
         <string>-c</string>
+        <!-- below path can be updated-->
         <string>exec /opt/anaconda3/bin/python3 /Users/tamimdostyar/Documents/remote/web_remote.py</string>
     </array>
 
